@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pictures</title>
+  <style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2933;
+    --muted: #5b6770;
+    --link: #1d5c8a;
+    --rule: #d9d6cf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191c;
+      --text: #e8e6e1;
+      --muted: #9aa3aa;
+      --link: #7fb8e3;
+      --rule: #343a3f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+  h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 0.5rem; }
+  p { margin: 0 0 1.25rem; color: var(--muted); }
+  nav ul { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid var(--rule); }
+  nav li { border-bottom: 1px solid var(--rule); }
+  nav a { display: block; padding: 1rem 0; font-size: 1.2rem; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+  .back { display: inline-block; margin-bottom: 2rem; }
+</style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to home</a>
+    <h1>Pictures</h1>
+    <p>Photos will go here.</p>
+  </main>
+</body>
+</html>
